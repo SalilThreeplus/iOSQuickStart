@@ -19,6 +19,14 @@
 		8A037AED251CB87900FDC5B9 /* QuickstartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A037AEC251CB87900FDC5B9 /* QuickstartTests.swift */; };
 		8A037AF8251CB87900FDC5B9 /* QuickstartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A037AF7251CB87900FDC5B9 /* QuickstartUITests.swift */; };
 		8A572AE6251DE13000E4F97C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AE5251DE13000E4F97C /* SplashViewController.swift */; };
+		8A572AEB251DFD1200E4F97C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AEA251DFD1200E4F97C /* LoginViewController.swift */; };
+		8A572AEE251E004B00E4F97C /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AED251E004B00E4F97C /* ApiRouter.swift */; };
+		8A572AF1251E00D300E4F97C /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AF0251E00D300E4F97C /* NetworkingConstants.swift */; };
+		8A572AF3251E019000E4F97C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AF2251E019000E4F97C /* ApiRequest.swift */; };
+		8A572AF6251E04E500E4F97C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AF5251E04E500E4F97C /* LoginService.swift */; };
+		8A572AF9251E060200E4F97C /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AF8251E060200E4F97C /* Posts.swift */; };
+		8A572AFC251E06AB00E4F97C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */; };
+		8A572AFF251E079400E4F97C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AFE251E079400E4F97C /* BasePresenter.swift */; };
 		C46FD8BBA68FBF003AB96DD7 /* Pods_Quickstart_QuickstartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA71BDBC5D4F3F098F38D0D /* Pods_Quickstart_QuickstartUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +69,14 @@
 		8A037AF7251CB87900FDC5B9 /* QuickstartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickstartUITests.swift; sourceTree = "<group>"; };
 		8A037AF9251CB87900FDC5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A572AE5251DE13000E4F97C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8A572AEA251DFD1200E4F97C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A572AED251E004B00E4F97C /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		8A572AF0251E00D300E4F97C /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		8A572AF2251E019000E4F97C /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		8A572AF5251E04E500E4F97C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		8A572AF8251E060200E4F97C /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		8A572AFE251E079400E4F97C /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		8BC781D42CA926F799428175 /* Pods-Quickstart-QuickstartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart-QuickstartUITests.release.xcconfig"; path = "Target Support Files/Pods-Quickstart-QuickstartUITests/Pods-Quickstart-QuickstartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A11CD36D8975FAD2AF4BA057 /* Pods-QuickstartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartTests.release.xcconfig"; path = "Target Support Files/Pods-QuickstartTests/Pods-QuickstartTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC4251459166D257485B25B8 /* Pods-Quickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.debug.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +146,8 @@
 		8A037AD1251CB87700FDC5B9 /* Quickstart */ = {
 			isa = PBXGroup;
 			children = (
+				8A572AFD251E078900E4F97C /* Base */,
+				8A572AE9251DFBE000E4F97C /* Networking */,
 				8A037B05251CCAAF00FDC5B9 /* Controllers */,
 				8A037AD2251CB87700FDC5B9 /* AppDelegate.swift */,
 				8A037AD4251CB87700FDC5B9 /* SceneDelegate.swift */,
@@ -172,9 +190,87 @@
 		8A037B05251CCAAF00FDC5B9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8A572AE5251DE13000E4F97C /* SplashViewController.swift */,
+				8A572AE8251DF94A00E4F97C /* Login */,
+				8A572AE7251DF94400E4F97C /* Splash */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A572AE7251DF94400E4F97C /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AE5251DE13000E4F97C /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		8A572AE8251DF94A00E4F97C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AFA251E06A100E4F97C /* Presenter */,
+				8A572AF7251E05FA00E4F97C /* Model */,
+				8A572AF4251E04D700E4F97C /* Service */,
+				8A572AEA251DFD1200E4F97C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8A572AE9251DFBE000E4F97C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AEF251E00B400E4F97C /* Constants */,
+				8A572AEC251E001E00E4F97C /* Router */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A572AEC251E001E00E4F97C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AED251E004B00E4F97C /* ApiRouter.swift */,
+				8A572AF2251E019000E4F97C /* ApiRequest.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8A572AEF251E00B400E4F97C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AF0251E00D300E4F97C /* NetworkingConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8A572AF4251E04D700E4F97C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AF5251E04E500E4F97C /* LoginService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8A572AF7251E05FA00E4F97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AF8251E060200E4F97C /* Posts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A572AFA251E06A100E4F97C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8A572AFD251E078900E4F97C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8A572AFE251E079400E4F97C /* BasePresenter.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		A03F393D405D3751D6E5DC0F /* Pods */ = {
@@ -429,11 +525,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A572AFC251E06AB00E4F97C /* LoginPresenter.swift in Sources */,
+				8A572AEB251DFD1200E4F97C /* LoginViewController.swift in Sources */,
+				8A572AF1251E00D300E4F97C /* NetworkingConstants.swift in Sources */,
 				8A037AD8251CB87700FDC5B9 /* Quickstart.xcdatamodeld in Sources */,
 				8A037AD3251CB87700FDC5B9 /* AppDelegate.swift in Sources */,
 				8A037ADA251CB87700FDC5B9 /* ContentView.swift in Sources */,
+				8A572AF3251E019000E4F97C /* ApiRequest.swift in Sources */,
+				8A572AF9251E060200E4F97C /* Posts.swift in Sources */,
+				8A572AFF251E079400E4F97C /* BasePresenter.swift in Sources */,
 				8A037AD5251CB87700FDC5B9 /* SceneDelegate.swift in Sources */,
+				8A572AF6251E04E500E4F97C /* LoginService.swift in Sources */,
 				8A572AE6251DE13000E4F97C /* SplashViewController.swift in Sources */,
+				8A572AEE251E004B00E4F97C /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

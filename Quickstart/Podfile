@@ -9,6 +9,7 @@ target 'Quickstart' do
 	pod 'Alamofire', '~> 5.2'
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'Bond'
+	pod 'PromisedFuture'
 
   target 'QuickstartTests' do
     inherit! :search_paths

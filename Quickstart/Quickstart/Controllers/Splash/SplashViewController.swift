@@ -9,6 +9,8 @@
 import UIKit
 import SnapKit
 import Bond
+import ReactiveKit
+
 
 class SplashViewController: UIViewController {
     
@@ -71,6 +73,12 @@ class SplashViewController: UIViewController {
               print("Button tapped.")
             }
         
+        combineLatest(txtName.reactive.text, txtName.reactive.text).map { (email, nil) -> Bool in
+              return (email?.count)! > 0
+        }.bind(to: btn.reactive.isEnabled)
+        
+        
         txtName.reactive.text.bind(to: lblTitle)
+        navigationController?.pushViewController(LoginViewController(), animated: true)
     }
 }
