@@ -138,6 +138,7 @@ class SplashViewController: BaseController {
                 if LocalizationSystem.sharedInstance.getLanguage() == "en"{
                     LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
                     self.lblLogin.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "login", comment: "")
+                    print(LocalizationSystem.sharedInstance.localizedStringForKey(key: "login", comment: ""))
                 }
         }
         
@@ -149,6 +150,7 @@ class SplashViewController: BaseController {
                 if LocalizationSystem.sharedInstance.getLanguage() == "ar"{
                     LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
                     self.lblLogin.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "login", comment: "")
+                    print(LocalizationSystem.sharedInstance.localizedStringForKey(key: "login", comment: ""))
                 }
         }
         
