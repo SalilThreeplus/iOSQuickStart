@@ -13,3 +13,11 @@ protocol BasePresenterProtocol: NSObjectProtocol {
     func hideLoaderWithSuccess()
     func hideLoaderWithError()
 }
+
+
+class BasePresenter {
+    weak private var bp : BasePresenterProtocol?    
+    init(basePresenterProtocol: BasePresenterProtocol) {
+        bp = basePresenterProtocol
+    }
+}

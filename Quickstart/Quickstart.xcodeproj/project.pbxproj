@@ -27,6 +27,7 @@
 		8A572AF9251E060200E4F97C /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AF8251E060200E4F97C /* Posts.swift */; };
 		8A572AFC251E06AB00E4F97C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */; };
 		8A572AFF251E079400E4F97C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AFE251E079400E4F97C /* BasePresenter.swift */; };
+		8A572B04251E0C6F00E4F97C /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572B03251E0C6F00E4F97C /* BaseController.swift */; };
 		C46FD8BBA68FBF003AB96DD7 /* Pods_Quickstart_QuickstartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA71BDBC5D4F3F098F38D0D /* Pods_Quickstart_QuickstartUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		8A572AF8251E060200E4F97C /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		8A572AFE251E079400E4F97C /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		8A572B03251E0C6F00E4F97C /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		8BC781D42CA926F799428175 /* Pods-Quickstart-QuickstartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart-QuickstartUITests.release.xcconfig"; path = "Target Support Files/Pods-Quickstart-QuickstartUITests/Pods-Quickstart-QuickstartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A11CD36D8975FAD2AF4BA057 /* Pods-QuickstartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartTests.release.xcconfig"; path = "Target Support Files/Pods-QuickstartTests/Pods-QuickstartTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC4251459166D257485B25B8 /* Pods-Quickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.debug.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				8A572AFE251E079400E4F97C /* BasePresenter.swift */,
+				8A572B03251E0C6F00E4F97C /* BaseController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 			files = (
 				8A572AFC251E06AB00E4F97C /* LoginPresenter.swift in Sources */,
 				8A572AEB251DFD1200E4F97C /* LoginViewController.swift in Sources */,
+				8A572B04251E0C6F00E4F97C /* BaseController.swift in Sources */,
 				8A572AF1251E00D300E4F97C /* NetworkingConstants.swift in Sources */,
 				8A037AD8251CB87700FDC5B9 /* Quickstart.xcdatamodeld in Sources */,
 				8A037AD3251CB87700FDC5B9 /* AppDelegate.swift in Sources */,

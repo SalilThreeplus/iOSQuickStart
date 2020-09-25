@@ -8,7 +8,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, BasePresenterProtocol, LoginProtocol {               
+class LoginViewController: BaseController, BasePresenterProtocol, LoginProtocol {
+    
     private var loginPresenter: LoginPresenter {
         get {
             LoginPresenter(service: LoginService(), basePresenterProtocol: self, loginProtocol: self)
@@ -20,7 +21,7 @@ class LoginViewController: UIViewController, BasePresenterProtocol, LoginProtoco
         view.backgroundColor = .white
         loginPresenter.getPosts()
     }
-
+    
 }
 
 //MARK:- Implementing login protocol
@@ -32,14 +33,14 @@ extension LoginViewController{
 
 extension LoginViewController {
     func showLoader() {
-           print("Loading...")
-       }
-       
-       func hideLoaderWithSuccess() {
-           print("Success")
-       }
-       
-       func hideLoaderWithError() {
-           print("Error")
-       }
+        print("Loading...")
+    }
+    
+    func hideLoaderWithSuccess() {
+        print("Success")
+    }
+    
+    func hideLoaderWithError() {
+        print("Error")
+    }
 }
