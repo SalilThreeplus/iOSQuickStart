@@ -28,6 +28,8 @@
 		8A572AFC251E06AB00E4F97C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */; };
 		8A572AFF251E079400E4F97C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572AFE251E079400E4F97C /* BasePresenter.swift */; };
 		8A572B04251E0C6F00E4F97C /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572B03251E0C6F00E4F97C /* BaseController.swift */; };
+		8A572B08251E160300E4F97C /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A572B07251E160300E4F97C /* LocalizationSystem.swift */; };
+		8A572B0C251E165000E4F97C /* LocalisationStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A572B0E251E165000E4F97C /* LocalisationStrings.strings */; };
 		C46FD8BBA68FBF003AB96DD7 /* Pods_Quickstart_QuickstartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA71BDBC5D4F3F098F38D0D /* Pods_Quickstart_QuickstartUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,10 @@
 		8A572AFB251E06AB00E4F97C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		8A572AFE251E079400E4F97C /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		8A572B03251E0C6F00E4F97C /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		8A572B07251E160300E4F97C /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		8A572B0D251E165000E4F97C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalisationStrings.strings; sourceTree = "<group>"; };
+		8A572B0F251E166000E4F97C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8A572B10251E166100E4F97C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LocalisationStrings.strings; sourceTree = "<group>"; };
 		8BC781D42CA926F799428175 /* Pods-Quickstart-QuickstartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart-QuickstartUITests.release.xcconfig"; path = "Target Support Files/Pods-Quickstart-QuickstartUITests/Pods-Quickstart-QuickstartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A11CD36D8975FAD2AF4BA057 /* Pods-QuickstartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartTests.release.xcconfig"; path = "Target Support Files/Pods-QuickstartTests/Pods-QuickstartTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC4251459166D257485B25B8 /* Pods-Quickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.debug.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		8A037AD1251CB87700FDC5B9 /* Quickstart */ = {
 			isa = PBXGroup;
 			children = (
+				8A572B05251E15EF00E4F97C /* App */,
 				8A572AFD251E078900E4F97C /* Base */,
 				8A572AE9251DFBE000E4F97C /* Networking */,
 				8A037B05251CCAAF00FDC5B9 /* Controllers */,
@@ -276,6 +283,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8A572B05251E15EF00E4F97C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A572B06251E15F600E4F97C /* Localisation */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A572B06251E15F600E4F97C /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				8A572B07251E160300E4F97C /* LocalizationSystem.swift */,
+				8A572B0E251E165000E4F97C /* LocalisationStrings.strings */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
 		A03F393D405D3751D6E5DC0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +404,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 8A037AC6251CB87700FDC5B9;
 			productRefGroup = 8A037AD0251CB87700FDC5B9 /* Products */;
@@ -401,6 +426,7 @@
 				8A037AE2251CB87900FDC5B9 /* LaunchScreen.storyboard in Resources */,
 				8A037ADF251CB87900FDC5B9 /* Preview Assets.xcassets in Resources */,
 				8A037ADC251CB87900FDC5B9 /* Assets.xcassets in Resources */,
+				8A572B0C251E165000E4F97C /* LocalisationStrings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +560,7 @@
 				8A572AF1251E00D300E4F97C /* NetworkingConstants.swift in Sources */,
 				8A037AD8251CB87700FDC5B9 /* Quickstart.xcdatamodeld in Sources */,
 				8A037AD3251CB87700FDC5B9 /* AppDelegate.swift in Sources */,
+				8A572B08251E160300E4F97C /* LocalizationSystem.swift in Sources */,
 				8A037ADA251CB87700FDC5B9 /* ContentView.swift in Sources */,
 				8A572AF3251E019000E4F97C /* ApiRequest.swift in Sources */,
 				8A572AF9251E060200E4F97C /* Posts.swift in Sources */,
@@ -581,8 +608,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				8A037AE1251CB87900FDC5B9 /* Base */,
+				8A572B0F251E166000E4F97C /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A572B0E251E165000E4F97C /* LocalisationStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A572B0D251E165000E4F97C /* en */,
+				8A572B10251E166100E4F97C /* ar */,
+			);
+			name = LocalisationStrings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -592,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -652,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
