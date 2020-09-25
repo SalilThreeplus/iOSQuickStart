@@ -15,9 +15,9 @@ protocol BasePresenterProtocol: NSObjectProtocol {
 }
 
 
-class BasePresenter {
-    weak private var bp : BasePresenterProtocol?    
-    init(basePresenterProtocol: BasePresenterProtocol) {
-        bp = basePresenterProtocol
-    }
-}
+//class BasePresenter {
+//    weak private var bp : BasePresenterProtocol?    
+//    init(basePresenterProtocol: BasePresenterProtocol) {
+//        bp = basePresenterProtocol
+//    }
+//}

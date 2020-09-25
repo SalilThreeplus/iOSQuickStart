@@ -13,7 +13,6 @@ protocol LoginProtocol : NSObjectProtocol {
     func setPosts(posts: Posts)
 }
 
-//class LoginPresenter: BasePresenter{
 class LoginPresenter{
     private let ls : LoginService
     weak private var bp : BasePresenterProtocol?
@@ -23,7 +22,6 @@ class LoginPresenter{
         ls = service
         lp = loginProtocol
         bp = basePresenterProtocol
-//        super.init(basePresenterProtocol: basePresenterProtocol)
     }
         
     func getPosts(){
