@@ -13,7 +13,8 @@ protocol LoginProtocol : NSObjectProtocol {
     func setPosts(posts: Posts)
 }
 
-class LoginPresenter: BasePresenter{
+//class LoginPresenter: BasePresenter{
+class LoginPresenter{
     private let ls : LoginService
     weak private var bp : BasePresenterProtocol?
     weak private var lp : LoginProtocol?
@@ -21,19 +22,19 @@ class LoginPresenter: BasePresenter{
     init(service: LoginService, basePresenterProtocol: BasePresenterProtocol,  loginProtocol: LoginProtocol){
         ls = service
         lp = loginProtocol
-        super.init(basePresenterProtocol: basePresenterProtocol)
+        bp = basePresenterProtocol
+//        super.init(basePresenterProtocol: basePresenterProtocol)
     }
         
     func getPosts(){
         bp?.showLoader()
         let result = ls.getPosts()
-        result.execute(onSuccess: { [weak self] (response) in
+        result.execute(onSuccess: {(response) in
             //MARK:- All business logic goes here
-            self?.bp?.hideLoaderWithSuccess()
-            self?.lp?.setPosts(posts: response)
-            print(response)
-        }) { [weak self]  (err) in
-            self?.bp?.hideLoaderWithError()
+            self.bp?.hideLoaderWithSuccess()
+            self.lp?.setPosts(posts: response)
+        }) { (err) in
+            self.bp?.hideLoaderWithError()
             print(err)
         }
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: BaseController, BasePresenterProtocol, LoginProtocol {
+class LoginViewController: BaseController, LoginProtocol {
     
     private var loginPresenter: LoginPresenter {
         get {
@@ -31,16 +31,3 @@ extension LoginViewController{
     }
 }
 
-extension LoginViewController {
-    func showLoader() {
-        print("Loading...")
-    }
-    
-    func hideLoaderWithSuccess() {
-        print("Success")
-    }
-    
-    func hideLoaderWithError() {
-        print("Error")
-    }
-}

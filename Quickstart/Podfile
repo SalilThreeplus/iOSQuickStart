@@ -10,6 +10,7 @@ target 'Quickstart' do
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'Bond'
 	pod 'PromisedFuture'
+	pod 'PKHUD', '~> 5.0'
 
   target 'QuickstartTests' do
     inherit! :search_paths

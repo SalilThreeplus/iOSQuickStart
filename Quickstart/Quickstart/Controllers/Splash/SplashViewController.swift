@@ -12,7 +12,7 @@ import Bond
 import ReactiveKit
 
 
-class SplashViewController: UIViewController {
+class SplashViewController: BaseController {
     
     let lblTitle : UILabel = {
         let lbl = UILabel()
@@ -69,16 +69,16 @@ class SplashViewController: UIViewController {
         btn
             .reactive
             .tap
-            .observeNext {
-              print("Button tapped.")
+            .observeNext { [weak self] in
+                self?.navigationController?.pushViewController(LoginViewController(), animated: true)
             }
         
-        combineLatest(txtName.reactive.text, txtName.reactive.text).map { (email, nil) -> Bool in
-              return (email?.count)! > 0
-        }.bind(to: btn.reactive.isEnabled)
+//        combineLatest(txtName.reactive.text, txtName.reactive.text).map { (email, nil) -> Bool in
+//              return (email?.count)! > 0
+//        }.bind(to: btn.reactive.isEnabled)
         
         
         txtName.reactive.text.bind(to: lblTitle)
-        navigationController?.pushViewController(LoginViewController(), animated: true)
+        
     }
 }

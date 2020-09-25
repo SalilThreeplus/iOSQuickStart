@@ -4,6 +4,7 @@ PODS:
     - Differ (~> 1.4)
     - ReactiveKit (~> 3.14)
   - Differ (1.4.5)
+  - PKHUD (5.3.0)
   - PromisedFuture (1.0.2)
   - ReactiveKit (3.17.4)
   - SnapKit (5.0.1)
@@ -11,6 +12,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Bond
+  - PKHUD (~> 5.0)
   - PromisedFuture
   - SnapKit (~> 5.0.0)
 
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Alamofire
     - Bond
     - Differ
+    - PKHUD
     - PromisedFuture
     - ReactiveKit
     - SnapKit
@@ -27,10 +30,11 @@ SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
   Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd
   ReactiveKit: f9f9e079efa39312c597bf1508ef4810d111ce76
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: b6f9b61776fc98a85f3ceda1970733fffb9c3b5e
+PODFILE CHECKSUM: 8cda43a84fc957436f7d53b2a58955da0e416542
 
 COCOAPODS: 1.10.0.beta.2
