@@ -16,9 +16,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HStack(alignment: .bottom, spacing: 10) {
-            ContentView()
-            
-        }
+        ContentView()
     }
 }
