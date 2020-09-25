@@ -24,7 +24,19 @@ class SplashViewController: UIViewController {
         txt.layer.borderColor = UIColor.black.cgColor
         txt.layer.borderWidth = 0.5
         txt.returnKeyType = .done
+        txt.layer.cornerRadius = 10
         return txt
+    }()
+    
+    let btn : UIButton = {
+        let btn = UIButton.init(type: .system)
+        btn.backgroundColor = .black
+        btn.setTitleColor(.white, for: .normal)
+        btn.setTitle("Hi", for: .normal)
+        btn.layer.borderColor = UIColor.black.cgColor
+        btn.layer.cornerRadius = 10
+        btn.layer.borderWidth = 0.5
+        return btn
     }()
     
     override func viewDidLoad() {
@@ -43,6 +55,21 @@ class SplashViewController: UIViewController {
             make.height.equalTo(50)
             make.width.equalToSuperview().multipliedBy(0.7)
         }
+        
+        view.addSubview(btn)
+        btn.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(txtName.snp.bottom).offset(20)
+            make.height.equalTo(50)
+            make.width.equalToSuperview().multipliedBy(0.7)
+        }
+        
+        btn
+            .reactive
+            .tap
+            .observeNext {
+              print("Button tapped.")
+            }
         
         txtName.reactive.text.bind(to: lblTitle)
     }
